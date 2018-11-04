@@ -1,0 +1,37 @@
+version: "3"
+services:
+  nodered:
+      build: ./nodered
+      ports:
+        - "1880:1880"
+        - "1883:1883"
+      volumes:
+        - "${PWD}/data:/root/.node-red"
+      privileged: true
+      restart: "unless-stopped"
+      # environment:
+      #   - FLOWS=my_flows.json
+      env_file:
+        - ./.env
+  # app:
+  #     build: ./app
+  #     # command: sh ./start.sh
+  #     command: >
+  #       bash -c "nodemon --watch . index.js & 
+  #               nodemon --watch /auto.js auto.js"
+  #     restart: always
+  #     privileged: true
+  #     env_file:
+  #       - ./app/.env
+  #     environment:
+  #       - NODE_ENV=production
+
+  # ipfs:
+  #     build: ./ipfs
+  #     command: node index.js
+  #     ports:
+  #       - "4001:4001"
+  #       - "5001:5001"
+  #       - "8080:8080"
+  #     restart: always
+  #     privileged: true

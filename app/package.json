@@ -1,0 +1,12 @@
+{
+  "name": "iot-rpi-core",
+  "private": true,
+  "version": "0.0.1",
+  "description": "iot-rpi-core app on dockerhub",
+  "author": "estebanrfp",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "onoff": "^1.1.2",
+    "simple-git": "^1.73.0"
+  }
+}

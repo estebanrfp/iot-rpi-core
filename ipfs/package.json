@@ -1,0 +1,11 @@
+{
+    "name": "ipfs",
+    "private": true,
+    "version": "0.0.1",
+    "description": "ipfs",
+    "author": "estebanrfp",
+    "dependencies": {
+        "ipfs-api": "^20.0.1",
+        "johnny-five": "^0.14.3"
+    }
+}

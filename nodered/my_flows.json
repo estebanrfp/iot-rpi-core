@@ -1,0 +1,1916 @@
+[
+    {
+        "id": "67de02a.5c2bcfc",
+        "type": "tab",
+        "label": "Dom",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "d243b5d3.a032b8",
+        "type": "tab",
+        "label": "Commands",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "aa7c2446.895f68",
+        "type": "tab",
+        "label": "exchange",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "52f0ad82.633694",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "126247a1.a81d68",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "f2da5348.e4938",
+        "type": "chatbot-telegram-node",
+        "z": "",
+        "botname": "Aurora",
+        "usernames": "estebanrfp",
+        "providerToken": "",
+        "polling": "1000",
+        "store": "",
+        "log": "",
+        "parseMode": "",
+        "debug": true
+    },
+    {
+        "id": "3a5a6951.ac3936",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "87bb628a.6c6ec",
+        "type": "ui_group",
+        "z": "",
+        "name": "CPU Temp",
+        "tab": "3da64eb5.914fe2",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "68b8dbb6.1f3d94",
+        "type": "ui_group",
+        "z": "",
+        "name": "Memory",
+        "tab": "3da64eb5.914fe2",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "3da64eb5.914fe2",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home",
+        "icon": "dashboard"
+    },
+    {
+        "id": "ebfaf7bb.ad37c8",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ad48af9b.34294",
+        "type": "telegram bot",
+        "z": "",
+        "botname": "Aurora",
+        "usernames": "estebanrfp",
+        "chatids": "1001388073955",
+        "baseapiurl": "https://api.telegram.org",
+        "pollinterval": "300"
+    },
+    {
+        "id": "2ebface2.420304",
+        "type": "node-hue-bridge",
+        "z": "",
+        "name": "Hue Bridge",
+        "address": "192.168.1.38",
+        "key": "duKQjydWMBOwNbObDKXlCsE1c6b3YbKF8GfwvTB0",
+        "interval": "10000"
+    },
+    {
+        "id": "626a4bfd.27d594",
+        "type": "chatbot-telegram-receive",
+        "z": "d243b5d3.a032b8",
+        "bot": "f2da5348.e4938",
+        "botProduction": "f2da5348.e4938",
+        "x": 90,
+        "y": 220,
+        "wires": [
+            [
+                "9974dc52.2b0fe",
+                "df0bd8c4.349778",
+                "9e416cc7.21687",
+                "ca1d012f.be67f",
+                "807ef2f2.8c707",
+                "df1c705a.336c1",
+                "a8f4b8bc.5d5868",
+                "895a6bcf.635898",
+                "f1a5bd6.d8dce4",
+                "455bb911.5d30b8"
+            ]
+        ]
+    },
+    {
+        "id": "beb299fa.509c28",
+        "type": "chatbot-message",
+        "z": "d243b5d3.a032b8",
+        "name": "just a name",
+        "message": [
+            {
+                "message": "hello world"
+            }
+        ],
+        "answer": true,
+        "track": false,
+        "x": 530,
+        "y": 140,
+        "wires": [
+            [
+                "73b047d7.0dfb58"
+            ]
+        ]
+    },
+    {
+        "id": "73b047d7.0dfb58",
+        "type": "chatbot-telegram-send",
+        "z": "d243b5d3.a032b8",
+        "bot": "f2da5348.e4938",
+        "botProduction": "f2da5348.e4938",
+        "track": true,
+        "outputs": 1,
+        "x": 990,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1c74d17c.5d7c0f",
+        "type": "chatbot-voice",
+        "z": "d243b5d3.a032b8",
+        "name": "",
+        "message": "Hola, que bien, por fin me he convertido en cyborg, queria dejarles este mensaje.",
+        "language": "es-es",
+        "x": 510,
+        "y": 180,
+        "wires": [
+            [
+                "73b047d7.0dfb58"
+            ]
+        ]
+    },
+    {
+        "id": "a28e182c.847e28",
+        "type": "chatbot-location",
+        "z": "d243b5d3.a032b8",
+        "name": "",
+        "latitude": "",
+        "longitude": "",
+        "place": "av. manuel de falla 12",
+        "x": 520,
+        "y": 220,
+        "wires": [
+            [
+                "73b047d7.0dfb58"
+            ]
+        ]
+    },
+    {
+        "id": "9974dc52.2b0fe",
+        "type": "chatbot-command",
+        "z": "d243b5d3.a032b8",
+        "name": "",
+        "command": "/test",
+        "x": 350,
+        "y": 140,
+        "wires": [
+            [
+                "beb299fa.509c28",
+                "fd6fba6d.d78088"
+            ]
+        ]
+    },
+    {
+        "id": "df0bd8c4.349778",
+        "type": "chatbot-command",
+        "z": "d243b5d3.a032b8",
+        "name": "",
+        "command": "/loc",
+        "x": 350,
+        "y": 220,
+        "wires": [
+            [
+                "a28e182c.847e28"
+            ]
+        ]
+    },
+    {
+        "id": "9e416cc7.21687",
+        "type": "chatbot-command",
+        "z": "d243b5d3.a032b8",
+        "name": "",
+        "command": "/test2",
+        "x": 350,
+        "y": 180,
+        "wires": [
+            [
+                "1c74d17c.5d7c0f"
+            ]
+        ]
+    },
+    {
+        "id": "d5821a48.330a18",
+        "type": "chatbot-qrcode",
+        "z": "d243b5d3.a032b8",
+        "message": "hola {{firstName}}, este es el mensaje",
+        "x": 520,
+        "y": 260,
+        "wires": [
+            [
+                "73b047d7.0dfb58"
+            ]
+        ]
+    },
+    {
+        "id": "ca1d012f.be67f",
+        "type": "chatbot-command",
+        "z": "d243b5d3.a032b8",
+        "name": "",
+        "command": "/qr",
+        "x": 350,
+        "y": 260,
+        "wires": [
+            [
+                "d5821a48.330a18"
+            ]
+        ]
+    },
+    {
+        "id": "807ef2f2.8c707",
+        "type": "chatbot-listen",
+        "z": "d243b5d3.a032b8",
+        "name": "",
+        "showdebug": false,
+        "rules": [
+            "esteban"
+        ],
+        "outputs": 1,
+        "x": 380,
+        "y": 320,
+        "wires": [
+            [
+                "ed7e9d91.d240f"
+            ]
+        ]
+    },
+    {
+        "id": "ed7e9d91.d240f",
+        "type": "chatbot-message",
+        "z": "d243b5d3.a032b8",
+        "name": "",
+        "message": [
+            {
+                "message": "has dicho Esteban?, sabes {{firstName}}, en estos momentos mi amo está ocupado :-)"
+            }
+        ],
+        "answer": true,
+        "track": false,
+        "x": 530,
+        "y": 320,
+        "wires": [
+            [
+                "73b047d7.0dfb58"
+            ]
+        ]
+    },
+    {
+        "id": "9726939f.39ea4",
+        "type": "price",
+        "z": "d243b5d3.a032b8",
+        "name": "eth",
+        "fsym": "ETH",
+        "tsyms": "BTC,USD,EUR",
+        "e": "CCCAGG",
+        "extraParams": "",
+        "sign": "",
+        "tryConversion": "",
+        "x": 530,
+        "y": 360,
+        "wires": [
+            [
+                "46305566.dadb7c"
+            ]
+        ]
+    },
+    {
+        "id": "df1c705a.336c1",
+        "type": "chatbot-listen",
+        "z": "d243b5d3.a032b8",
+        "name": "",
+        "showdebug": false,
+        "rules": [
+            "precio,eth"
+        ],
+        "outputs": 1,
+        "x": 380,
+        "y": 360,
+        "wires": [
+            [
+                "9726939f.39ea4"
+            ]
+        ]
+    },
+    {
+        "id": "a8f4b8bc.5d5868",
+        "type": "chatbot-rivescript",
+        "z": "d243b5d3.a032b8",
+        "name": "",
+        "script": "! version = 2.0\n\n+ who is *\n- I don't know who <star> is.\n\n+ mi nombre es guido\n- <set name=<star>>ok, I'll remember your name as <get name>\n\n+ Hola esteban\n- Hola, humano!\n\n+ como estas\n- estoy muy bien, y tu?\n- muy bien, gracias\n- bien :) y tu?\n- excelente! y tu?\n- super bien, gracias por preguntar!\n\n+ what to do next\n- Please register, what is your email?\n\n+ *\n% please register what is your email\n+ <set email=<star>><topic=registered>Thank your <get firstName>\n\n> topic registered\n  + what to do next\n  - Time to buy a ticket...\n< topic",
+        "debug": false,
+        "x": 370,
+        "y": 440,
+        "wires": [
+            [
+                "c22047ed.c76d28"
+            ],
+            [
+                "f5033657.0d6db8"
+            ]
+        ]
+    },
+    {
+        "id": "c22047ed.c76d28",
+        "type": "chatbot-message",
+        "z": "d243b5d3.a032b8",
+        "name": "output reply",
+        "message": [
+            {
+                "message": ""
+            }
+        ],
+        "answer": false,
+        "track": false,
+        "x": 550,
+        "y": 420,
+        "wires": [
+            [
+                "73b047d7.0dfb58"
+            ]
+        ]
+    },
+    {
+        "id": "f5033657.0d6db8",
+        "type": "chatbot-message",
+        "z": "d243b5d3.a032b8",
+        "name": "error",
+        "message": [
+            {
+                "message": ""
+            }
+        ],
+        "answer": false,
+        "track": false,
+        "x": 530,
+        "y": 460,
+        "wires": [
+            [
+                "73b047d7.0dfb58"
+            ]
+        ]
+    },
+    {
+        "id": "4ebb6fc3.b58f2",
+        "type": "chatbot-message",
+        "z": "d243b5d3.a032b8",
+        "name": "",
+        "message": [
+            {
+                "message": ""
+            }
+        ],
+        "answer": false,
+        "track": false,
+        "x": 790,
+        "y": 360,
+        "wires": [
+            [
+                "90c61d22.4f8bc",
+                "73b047d7.0dfb58",
+                "8d88d158.14ef3"
+            ]
+        ]
+    },
+    {
+        "id": "70f5820e.6aaa2c",
+        "type": "comment",
+        "z": "d243b5d3.a032b8",
+        "name": "Rivescript",
+        "info": "https://github.com/guidone/node-red-contrib-chatbot/wiki/Rivescript-parser",
+        "x": 130,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "2fb7640.ad7609c",
+        "type": "mosca in",
+        "z": "67de02a.5c2bcfc",
+        "mqtt_port": 1883,
+        "mqtt_ws_port": 8080,
+        "name": "",
+        "username": "",
+        "password": "",
+        "dburl": "",
+        "x": 170,
+        "y": 80,
+        "wires": [
+            [
+                "51a49682.4c2278"
+            ]
+        ]
+    },
+    {
+        "id": "51a49682.4c2278",
+        "type": "debug",
+        "z": "67de02a.5c2bcfc",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 910,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "96ed2622.8aa818",
+        "type": "mqtt in",
+        "z": "67de02a.5c2bcfc",
+        "name": "",
+        "topic": "cputemp",
+        "qos": "2",
+        "broker": "3a5a6951.ac3936",
+        "x": 195,
+        "y": 275,
+        "wires": [
+            [
+                "abbd5ccd.f3eed",
+                "ea435623.957448"
+            ]
+        ]
+    },
+    {
+        "id": "abbd5ccd.f3eed",
+        "type": "ui_gauge",
+        "z": "67de02a.5c2bcfc",
+        "name": "cpu temp",
+        "group": "87bb628a.6c6ec",
+        "order": 1,
+        "width": "",
+        "height": "",
+        "gtype": "gage",
+        "title": "",
+        "label": "",
+        "format": "{{value}}",
+        "min": "40",
+        "max": "80",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 801,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "8bf55914.3ddff8",
+        "type": "mqtt out",
+        "z": "67de02a.5c2bcfc",
+        "name": "",
+        "topic": "led",
+        "qos": "",
+        "retain": "",
+        "broker": "3a5a6951.ac3936",
+        "x": 510,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "ea435623.957448",
+        "type": "ui_chart",
+        "z": "67de02a.5c2bcfc",
+        "name": "",
+        "group": "87bb628a.6c6ec",
+        "order": 2,
+        "width": "",
+        "height": "",
+        "label": "",
+        "chartType": "line",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "No Data",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "20",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "1",
+        "cutout": "",
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": true,
+        "x": 791,
+        "y": 263,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "ea8abe9d.28e5e",
+        "type": "inject",
+        "z": "67de02a.5c2bcfc",
+        "name": "",
+        "topic": "test",
+        "payload": "Hola, esto es una prueba",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 277,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dce47243.a713c",
+        "type": "mqtt in",
+        "z": "67de02a.5c2bcfc",
+        "name": "",
+        "topic": "espruino",
+        "qos": "2",
+        "broker": "3a5a6951.ac3936",
+        "x": 195,
+        "y": 160,
+        "wires": [
+            [
+                "de82ce21.46a6e",
+                "22d25836.c325b8"
+            ]
+        ]
+    },
+    {
+        "id": "de82ce21.46a6e",
+        "type": "json",
+        "z": "67de02a.5c2bcfc",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 434,
+        "y": 181,
+        "wires": [
+            [
+                "dfbd0fb7.1c3fb",
+                "1cf86f44.0c0a81",
+                "e408a767.825848"
+            ]
+        ]
+    },
+    {
+        "id": "dfbd0fb7.1c3fb",
+        "type": "function",
+        "z": "67de02a.5c2bcfc",
+        "name": "free",
+        "func": "msg.payload=msg.payload.free\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 590,
+        "y": 140,
+        "wires": [
+            [
+                "d38c5a5a.5c20a8"
+            ]
+        ]
+    },
+    {
+        "id": "d38c5a5a.5c20a8",
+        "type": "ui_gauge",
+        "z": "67de02a.5c2bcfc",
+        "name": "Memory",
+        "group": "68b8dbb6.1f3d94",
+        "order": 2,
+        "width": "",
+        "height": "",
+        "gtype": "gage",
+        "title": "",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "10000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 760,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "5faa56db.4f8428",
+        "type": "ui_switch",
+        "z": "67de02a.5c2bcfc",
+        "name": "",
+        "label": "",
+        "group": "68b8dbb6.1f3d94",
+        "order": 1,
+        "width": "",
+        "height": "",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "led",
+        "onvalue": "true",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 190,
+        "y": 400,
+        "wires": [
+            [
+                "8bf55914.3ddff8"
+            ]
+        ]
+    },
+    {
+        "id": "b5f79629.9daa98",
+        "type": "ui_toast",
+        "z": "67de02a.5c2bcfc",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "topic": "",
+        "name": "",
+        "x": 829.5,
+        "y": 342,
+        "wires": []
+    },
+    {
+        "id": "7f2f13c7.3b48ac",
+        "type": "mqtt in",
+        "z": "67de02a.5c2bcfc",
+        "name": "buttonpress",
+        "topic": "buttonpress",
+        "qos": "2",
+        "broker": "3a5a6951.ac3936",
+        "x": 203.5,
+        "y": 328,
+        "wires": [
+            [
+                "b5f79629.9daa98"
+            ]
+        ]
+    },
+    {
+        "id": "1cf86f44.0c0a81",
+        "type": "function",
+        "z": "67de02a.5c2bcfc",
+        "name": "usage",
+        "func": "msg.payload=msg.payload.usage\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 590.5,
+        "y": 180,
+        "wires": [
+            [
+                "1c6140ab.a4221f"
+            ]
+        ]
+    },
+    {
+        "id": "e408a767.825848",
+        "type": "function",
+        "z": "67de02a.5c2bcfc",
+        "name": "total",
+        "func": "msg.payload=msg.payload.total\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 589.5,
+        "y": 218,
+        "wires": [
+            [
+                "1aae2ab0.0e8265"
+            ]
+        ]
+    },
+    {
+        "id": "1c6140ab.a4221f",
+        "type": "ui_gauge",
+        "z": "67de02a.5c2bcfc",
+        "name": "",
+        "group": "68b8dbb6.1f3d94",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Usage",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "10000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 750.5,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "1aae2ab0.0e8265",
+        "type": "ui_gauge",
+        "z": "67de02a.5c2bcfc",
+        "name": "",
+        "group": "68b8dbb6.1f3d94",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Total",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "10000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 751.5,
+        "y": 218,
+        "wires": []
+    },
+    {
+        "id": "22d25836.c325b8",
+        "type": "debug",
+        "z": "67de02a.5c2bcfc",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 449.5,
+        "y": 103,
+        "wires": []
+    },
+    {
+        "id": "41197379.41f81c",
+        "type": "ui_audio",
+        "z": "67de02a.5c2bcfc",
+        "name": "",
+        "group": "87bb628a.6c6ec",
+        "voice": "es-ES",
+        "always": true,
+        "x": 511.5,
+        "y": 545,
+        "wires": []
+    },
+    {
+        "id": "618f4c7a.44e9c4",
+        "type": "inject",
+        "z": "67de02a.5c2bcfc",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 216.5,
+        "y": 544,
+        "wires": [
+            [
+                "41197379.41f81c"
+            ]
+        ]
+    },
+    {
+        "id": "7c22b1c8.28e62",
+        "type": "catch",
+        "z": "67de02a.5c2bcfc",
+        "name": "",
+        "scope": null,
+        "x": 140,
+        "y": 120,
+        "wires": [
+            [
+                "51a49682.4c2278"
+            ]
+        ]
+    },
+    {
+        "id": "90c61d22.4f8bc",
+        "type": "debug",
+        "z": "d243b5d3.a032b8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 970,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "46305566.dadb7c",
+        "type": "function",
+        "z": "d243b5d3.a032b8",
+        "name": "prepare",
+        "func": "var btc = msg.payload.BTC;\nvar eur = msg.payload.EUR;\nvar usd = msg.payload.USD;\nmsg.payload = \"ETH = \" + btc + \" btc\";\nmsg.payload += \" | \" + eur + \" eur\";\nmsg.payload += \" | \" + usd + \" usd\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 660,
+        "y": 360,
+        "wires": [
+            [
+                "4ebb6fc3.b58f2"
+            ]
+        ]
+    },
+    {
+        "id": "8d88d158.14ef3",
+        "type": "delay",
+        "z": "d243b5d3.a032b8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 840,
+        "y": 460,
+        "wires": [
+            [
+                "90c61d22.4f8bc"
+            ]
+        ]
+    },
+    {
+        "id": "9e125fa5.f16",
+        "type": "debug",
+        "z": "aa7c2446.895f68",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 910,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "f31c52c9.5de5f",
+        "type": "chatbot-message",
+        "z": "aa7c2446.895f68",
+        "name": "",
+        "message": [
+            {
+                "message": ""
+            }
+        ],
+        "answer": false,
+        "track": false,
+        "x": 710,
+        "y": 340,
+        "wires": [
+            [
+                "9e125fa5.f16",
+                "93ae799.d37f188"
+            ]
+        ]
+    },
+    {
+        "id": "b3bcc4d0.e53d38",
+        "type": "function",
+        "z": "aa7c2446.895f68",
+        "name": "prepare",
+        "func": "var btc = msg.payload.BTC;\nvar eur = msg.payload.EUR;\nvar usd = msg.payload.USD;\nmsg.payload = \"ETH = \" + btc + \" btc\";\nmsg.payload += \" | \" + eur + \" eur\";\nmsg.payload += \" | \" + usd + \" usd\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 540,
+        "y": 200,
+        "wires": [
+            [
+                "f31c52c9.5de5f"
+            ]
+        ]
+    },
+    {
+        "id": "d042b618.fff748",
+        "type": "function",
+        "z": "aa7c2446.895f68",
+        "name": "prepare",
+        "func": "var btc = msg.payload.BTC;\nvar eur = msg.payload.EUR;\nvar usd = msg.payload.USD;\nmsg.payload = \"BTC = \" + eur + \" eur\";\nmsg.payload += \" | \" + usd + \" usd\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 540,
+        "y": 140,
+        "wires": [
+            [
+                "f31c52c9.5de5f"
+            ]
+        ]
+    },
+    {
+        "id": "1e8219fd.bc9676",
+        "type": "price",
+        "z": "aa7c2446.895f68",
+        "name": "eth",
+        "fsym": "ETH",
+        "tsyms": "BTC,USD,EUR",
+        "e": "CCCAGG",
+        "extraParams": "",
+        "sign": "",
+        "tryConversion": "",
+        "x": 410,
+        "y": 200,
+        "wires": [
+            [
+                "b3bcc4d0.e53d38"
+            ]
+        ]
+    },
+    {
+        "id": "988ec26e.f471f",
+        "type": "price",
+        "z": "aa7c2446.895f68",
+        "name": "btc",
+        "fsym": "BTC",
+        "tsyms": "BTC,USD,EUR",
+        "e": "CCCAGG",
+        "extraParams": "",
+        "sign": "",
+        "tryConversion": "",
+        "x": 410,
+        "y": 140,
+        "wires": [
+            [
+                "d042b618.fff748"
+            ]
+        ]
+    },
+    {
+        "id": "996e8445.64da28",
+        "type": "chatbot-command",
+        "z": "aa7c2446.895f68",
+        "name": "",
+        "command": "eth",
+        "x": 290,
+        "y": 200,
+        "wires": [
+            [
+                "1e8219fd.bc9676"
+            ]
+        ]
+    },
+    {
+        "id": "47c0dcd7.edfd44",
+        "type": "chatbot-command",
+        "z": "aa7c2446.895f68",
+        "name": "",
+        "command": "/btc",
+        "x": 290,
+        "y": 140,
+        "wires": [
+            [
+                "988ec26e.f471f"
+            ]
+        ]
+    },
+    {
+        "id": "a06103e0.278a2",
+        "type": "chatbot-telegram-receive",
+        "z": "aa7c2446.895f68",
+        "bot": "f2da5348.e4938",
+        "botProduction": "f2da5348.e4938",
+        "x": 90,
+        "y": 340,
+        "wires": [
+            [
+                "996e8445.64da28",
+                "47c0dcd7.edfd44",
+                "18531332.0fa4cd",
+                "ed3f4141.2eaa9",
+                "bc3412c5.924c7",
+                "9daf350a.c4cad8",
+                "46e9d1b2.19fb7",
+                "2c1a950b.ce40aa",
+                "30163673.c8200a",
+                "b656bc6b.cd96e"
+            ]
+        ]
+    },
+    {
+        "id": "93ae799.d37f188",
+        "type": "chatbot-telegram-send",
+        "z": "aa7c2446.895f68",
+        "bot": "f2da5348.e4938",
+        "botProduction": "f2da5348.e4938",
+        "track": true,
+        "outputs": 1,
+        "x": 930,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9778d393.e6903",
+        "type": "function",
+        "z": "aa7c2446.895f68",
+        "name": "prepare",
+        "func": "var btc = msg.payload.BTC;\nvar eur = msg.payload.EUR;\nvar usd = msg.payload.USD;\nmsg.payload = \"MANA = \" + btc + \" btc\";\nmsg.payload += \" | \" + eur + \" eur\";\nmsg.payload += \" | \" + usd + \" usd\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 540,
+        "y": 240,
+        "wires": [
+            [
+                "f31c52c9.5de5f"
+            ]
+        ]
+    },
+    {
+        "id": "879ab361.75746",
+        "type": "function",
+        "z": "aa7c2446.895f68",
+        "name": "prepare",
+        "func": "var btc = msg.payload.BTC;\nvar eur = msg.payload.EUR;\nvar usd = msg.payload.USD;\nmsg.payload = \"IOTA = \" + btc + \" btc\";\nmsg.payload += \" | \" + eur + \" eur\";\nmsg.payload += \" | \" + usd + \" usd\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 540,
+        "y": 280,
+        "wires": [
+            [
+                "f31c52c9.5de5f"
+            ]
+        ]
+    },
+    {
+        "id": "df86b0fb.18b1f",
+        "type": "price",
+        "z": "aa7c2446.895f68",
+        "name": "mana",
+        "fsym": "MANA",
+        "tsyms": "BTC,USD,EUR",
+        "e": "CCCAGG",
+        "extraParams": "",
+        "sign": "",
+        "tryConversion": "",
+        "x": 410,
+        "y": 240,
+        "wires": [
+            [
+                "9778d393.e6903"
+            ]
+        ]
+    },
+    {
+        "id": "8d33ba14.347958",
+        "type": "price",
+        "z": "aa7c2446.895f68",
+        "name": "iota",
+        "fsym": "IOTA",
+        "tsyms": "BTC,USD,EUR",
+        "e": "CCCAGG",
+        "extraParams": "",
+        "sign": "",
+        "tryConversion": "",
+        "x": 410,
+        "y": 280,
+        "wires": [
+            [
+                "879ab361.75746"
+            ]
+        ]
+    },
+    {
+        "id": "18531332.0fa4cd",
+        "type": "chatbot-command",
+        "z": "aa7c2446.895f68",
+        "name": "",
+        "command": "mana",
+        "x": 290,
+        "y": 240,
+        "wires": [
+            [
+                "df86b0fb.18b1f"
+            ]
+        ]
+    },
+    {
+        "id": "ed3f4141.2eaa9",
+        "type": "chatbot-command",
+        "z": "aa7c2446.895f68",
+        "name": "",
+        "command": "/iota",
+        "x": 290,
+        "y": 280,
+        "wires": [
+            [
+                "8d33ba14.347958"
+            ]
+        ]
+    },
+    {
+        "id": "9298128e.31169",
+        "type": "chatbot-inline-buttons",
+        "z": "d243b5d3.a032b8",
+        "name": "desarrolloactivo.com",
+        "buttons": [
+            {
+                "type": "url",
+                "label": "desarrolloactivo.com",
+                "url": "https://desarrolloactivo.com",
+                "webViewHeightRatio": "full",
+                "extensions": false,
+                "answer": "",
+                "alert": true
+            }
+        ],
+        "message": "",
+        "x": 540,
+        "y": 520,
+        "wires": [
+            [
+                "73b047d7.0dfb58",
+                "90c61d22.4f8bc"
+            ]
+        ]
+    },
+    {
+        "id": "895a6bcf.635898",
+        "type": "chatbot-command",
+        "z": "d243b5d3.a032b8",
+        "name": "",
+        "command": "/li",
+        "x": 350,
+        "y": 520,
+        "wires": [
+            [
+                "9298128e.31169"
+            ]
+        ]
+    },
+    {
+        "id": "e46fd3dc.4758f",
+        "type": "toppairs",
+        "z": "aa7c2446.895f68",
+        "name": "",
+        "fsym": "eth",
+        "tsym": "",
+        "limit": "",
+        "sign": "",
+        "x": 540,
+        "y": 540,
+        "wires": [
+            [
+                "f31c52c9.5de5f"
+            ]
+        ]
+    },
+    {
+        "id": "bc3412c5.924c7",
+        "type": "chatbot-command",
+        "z": "aa7c2446.895f68",
+        "name": "",
+        "command": "/top",
+        "x": 290,
+        "y": 540,
+        "wires": [
+            [
+                "e46fd3dc.4758f"
+            ]
+        ]
+    },
+    {
+        "id": "d5d4e205.736ee",
+        "type": "coinlist",
+        "z": "aa7c2446.895f68",
+        "name": "crypto",
+        "x": 530,
+        "y": 600,
+        "wires": [
+            [
+                "9e125fa5.f16"
+            ]
+        ]
+    },
+    {
+        "id": "9daf350a.c4cad8",
+        "type": "chatbot-command",
+        "z": "aa7c2446.895f68",
+        "name": "",
+        "command": "/ada",
+        "x": 290,
+        "y": 320,
+        "wires": [
+            [
+                "641532d5.16362c"
+            ]
+        ]
+    },
+    {
+        "id": "641532d5.16362c",
+        "type": "price",
+        "z": "aa7c2446.895f68",
+        "name": "ada",
+        "fsym": "ADA",
+        "tsyms": "BTC,USD,EUR",
+        "e": "CCCAGG",
+        "extraParams": "",
+        "sign": "",
+        "tryConversion": "",
+        "x": 410,
+        "y": 320,
+        "wires": [
+            [
+                "80026179.0adff"
+            ]
+        ]
+    },
+    {
+        "id": "80026179.0adff",
+        "type": "function",
+        "z": "aa7c2446.895f68",
+        "name": "prepare",
+        "func": "var btc = msg.payload.BTC;\nvar eur = msg.payload.EUR;\nvar usd = msg.payload.USD;\nmsg.payload = \"ADA = \" + btc + \" btc\";\nmsg.payload += \" | \" + eur + \" eur\";\nmsg.payload += \" | \" + usd + \" usd\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 540,
+        "y": 320,
+        "wires": [
+            [
+                "f31c52c9.5de5f"
+            ]
+        ]
+    },
+    {
+        "id": "46e9d1b2.19fb7",
+        "type": "chatbot-command",
+        "z": "aa7c2446.895f68",
+        "name": "",
+        "command": "/ltc",
+        "x": 290,
+        "y": 360,
+        "wires": [
+            [
+                "8fa90c9f.82396"
+            ]
+        ]
+    },
+    {
+        "id": "8fa90c9f.82396",
+        "type": "price",
+        "z": "aa7c2446.895f68",
+        "name": "ltc",
+        "fsym": "LTC",
+        "tsyms": "BTC,USD,EUR",
+        "e": "CCCAGG",
+        "extraParams": "",
+        "sign": "",
+        "tryConversion": "",
+        "x": 410,
+        "y": 360,
+        "wires": [
+            [
+                "3ace6c1d.833044"
+            ]
+        ]
+    },
+    {
+        "id": "3ace6c1d.833044",
+        "type": "function",
+        "z": "aa7c2446.895f68",
+        "name": "prepare",
+        "func": "var btc = msg.payload.BTC;\nvar eur = msg.payload.EUR;\nvar usd = msg.payload.USD;\nmsg.payload = \"LTC = \" + btc + \" btc\";\nmsg.payload += \" | \" + eur + \" eur\";\nmsg.payload += \" | \" + usd + \" usd\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 540,
+        "y": 360,
+        "wires": [
+            [
+                "f31c52c9.5de5f"
+            ]
+        ]
+    },
+    {
+        "id": "2c1a950b.ce40aa",
+        "type": "chatbot-command",
+        "z": "aa7c2446.895f68",
+        "name": "",
+        "command": "/neo",
+        "x": 290,
+        "y": 400,
+        "wires": [
+            [
+                "80bce421.8fe548"
+            ]
+        ]
+    },
+    {
+        "id": "80bce421.8fe548",
+        "type": "price",
+        "z": "aa7c2446.895f68",
+        "name": "neo",
+        "fsym": "NEO",
+        "tsyms": "BTC,USD,EUR",
+        "e": "CCCAGG",
+        "extraParams": "",
+        "sign": "",
+        "tryConversion": "",
+        "x": 410,
+        "y": 400,
+        "wires": [
+            [
+                "daef56ef.9149d8"
+            ]
+        ]
+    },
+    {
+        "id": "daef56ef.9149d8",
+        "type": "function",
+        "z": "aa7c2446.895f68",
+        "name": "prepare",
+        "func": "var btc = msg.payload.BTC;\nvar eur = msg.payload.EUR;\nvar usd = msg.payload.USD;\nmsg.payload = \"NEO = \" + btc + \" btc\";\nmsg.payload += \" | \" + eur + \" eur\";\nmsg.payload += \" | \" + usd + \" usd\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 540,
+        "y": 400,
+        "wires": [
+            [
+                "f31c52c9.5de5f"
+            ]
+        ]
+    },
+    {
+        "id": "30163673.c8200a",
+        "type": "chatbot-command",
+        "z": "aa7c2446.895f68",
+        "name": "",
+        "command": "/xmr",
+        "x": 290,
+        "y": 440,
+        "wires": [
+            [
+                "4b8fca0c.e19264"
+            ]
+        ]
+    },
+    {
+        "id": "4b8fca0c.e19264",
+        "type": "price",
+        "z": "aa7c2446.895f68",
+        "name": "xmr",
+        "fsym": "XMR",
+        "tsyms": "BTC,USD,EUR",
+        "e": "CCCAGG",
+        "extraParams": "",
+        "sign": "",
+        "tryConversion": "",
+        "x": 410,
+        "y": 440,
+        "wires": [
+            [
+                "b3da97d2.9fe288"
+            ]
+        ]
+    },
+    {
+        "id": "b3da97d2.9fe288",
+        "type": "function",
+        "z": "aa7c2446.895f68",
+        "name": "prepare",
+        "func": "var btc = msg.payload.BTC;\nvar eur = msg.payload.EUR;\nvar usd = msg.payload.USD;\nmsg.payload = \"XMR = \" + btc + \" btc\";\nmsg.payload += \" | \" + eur + \" eur\";\nmsg.payload += \" | \" + usd + \" usd\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 540,
+        "y": 440,
+        "wires": [
+            [
+                "f31c52c9.5de5f"
+            ]
+        ]
+    },
+    {
+        "id": "b656bc6b.cd96e",
+        "type": "chatbot-command",
+        "z": "aa7c2446.895f68",
+        "name": "",
+        "command": "/dash",
+        "x": 290,
+        "y": 480,
+        "wires": [
+            [
+                "87c728d0.c5e7f8"
+            ]
+        ]
+    },
+    {
+        "id": "87c728d0.c5e7f8",
+        "type": "price",
+        "z": "aa7c2446.895f68",
+        "name": "dash",
+        "fsym": "DASH",
+        "tsyms": "BTC,USD,EUR",
+        "e": "CCCAGG",
+        "extraParams": "",
+        "sign": "",
+        "tryConversion": "",
+        "x": 410,
+        "y": 480,
+        "wires": [
+            [
+                "164edf0a.bb3021"
+            ]
+        ]
+    },
+    {
+        "id": "164edf0a.bb3021",
+        "type": "function",
+        "z": "aa7c2446.895f68",
+        "name": "prepare",
+        "func": "var btc = msg.payload.BTC;\nvar eur = msg.payload.EUR;\nvar usd = msg.payload.USD;\nmsg.payload = \"DASH = \" + btc + \" btc\";\nmsg.payload += \" | \" + eur + \" eur\";\nmsg.payload += \" | \" + usd + \" usd\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 540,
+        "y": 480,
+        "wires": [
+            [
+                "f31c52c9.5de5f"
+            ]
+        ]
+    },
+    {
+        "id": "3ac0751a.ce067a",
+        "type": "inject",
+        "z": "aa7c2446.895f68",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 280,
+        "y": 640,
+        "wires": [
+            [
+                "d5d4e205.736ee"
+            ]
+        ]
+    },
+    {
+        "id": "294dfde6.43d642",
+        "type": "function",
+        "z": "52f0ad82.633694",
+        "name": "create help text",
+        "func": "msg.payload.message = \"hello world\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 460,
+        "y": 140,
+        "wires": [
+            [
+                "efbc5df6.af882"
+            ]
+        ]
+    },
+    {
+        "id": "efbc5df6.af882",
+        "type": "chatbot-telegram-send",
+        "z": "52f0ad82.633694",
+        "bot": "f2da5348.e4938",
+        "botProduction": "f2da5348.e4938",
+        "track": false,
+        "outputs": 0,
+        "x": 690,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "3a65b2cf.d50f4e",
+        "type": "inject",
+        "z": "52f0ad82.633694",
+        "name": "",
+        "topic": "",
+        "payload": "hola jesús",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 260,
+        "y": 140,
+        "wires": [
+            [
+                "294dfde6.43d642"
+            ]
+        ]
+    },
+    {
+        "id": "fd6fba6d.d78088",
+        "type": "chatbot-sticker",
+        "z": "d243b5d3.a032b8",
+        "sticker": "bati bati",
+        "x": 520,
+        "y": 80,
+        "wires": [
+            [
+                "73b047d7.0dfb58"
+            ]
+        ]
+    },
+    {
+        "id": "bc7f6db0.75c3c",
+        "type": "node-hue-in",
+        "z": "52f0ad82.633694",
+        "server": "2ebface2.420304",
+        "lightID": "light11",
+        "name": "LIGHTSTRIP PLUS",
+        "x": 470,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "86990e58.2abb4",
+        "type": "inject",
+        "z": "52f0ad82.633694",
+        "name": "",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 250,
+        "y": 300,
+        "wires": [
+            [
+                "bc7f6db0.75c3c",
+                "402667ba.a27308"
+            ]
+        ]
+    },
+    {
+        "id": "1c886b28.8b18e5",
+        "type": "inject",
+        "z": "52f0ad82.633694",
+        "name": "",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 250,
+        "y": 380,
+        "wires": [
+            [
+                "bc7f6db0.75c3c"
+            ]
+        ]
+    },
+    {
+        "id": "1c5cf2f2.abbc1d",
+        "type": "inject",
+        "z": "52f0ad82.633694",
+        "name": "",
+        "topic": "",
+        "payload": "bri/20",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 250,
+        "y": 440,
+        "wires": [
+            [
+                "bc7f6db0.75c3c"
+            ]
+        ]
+    },
+    {
+        "id": "43b7ff71.2a6d1",
+        "type": "node-hue-out",
+        "z": "52f0ad82.633694",
+        "server": "2ebface2.420304",
+        "lightID": "light11",
+        "name": "",
+        "x": 430,
+        "y": 440,
+        "wires": [
+            [
+                "402667ba.a27308"
+            ]
+        ]
+    },
+    {
+        "id": "402667ba.a27308",
+        "type": "debug",
+        "z": "52f0ad82.633694",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 740,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "f1a5bd6.d8dce4",
+        "type": "chatbot-command",
+        "z": "d243b5d3.a032b8",
+        "name": "",
+        "command": "/luzon",
+        "x": 350,
+        "y": 600,
+        "wires": [
+            [
+                "1af7b67.27b5b4a"
+            ]
+        ],
+        "outputLabels": [
+            "true"
+        ]
+    },
+    {
+        "id": "455bb911.5d30b8",
+        "type": "chatbot-command",
+        "z": "d243b5d3.a032b8",
+        "name": "",
+        "command": "/luzoff",
+        "x": 350,
+        "y": 680,
+        "wires": [
+            [
+                "4465e57c.3378cc"
+            ]
+        ],
+        "outputLabels": [
+            "false"
+        ]
+    },
+    {
+        "id": "fdf2b18d.4f0dc",
+        "type": "node-hue-in",
+        "z": "d243b5d3.a032b8",
+        "server": "2ebface2.420304",
+        "lightID": "light11",
+        "name": "",
+        "x": 770,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "1af7b67.27b5b4a",
+        "type": "function",
+        "z": "d243b5d3.a032b8",
+        "name": "",
+        "func": "msg.payload = true;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 570,
+        "y": 600,
+        "wires": [
+            [
+                "fdf2b18d.4f0dc"
+            ]
+        ]
+    },
+    {
+        "id": "4465e57c.3378cc",
+        "type": "function",
+        "z": "d243b5d3.a032b8",
+        "name": "",
+        "func": "msg.payload = false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 570,
+        "y": 680,
+        "wires": [
+            [
+                "fdf2b18d.4f0dc"
+            ]
+        ]
+    },
+    {
+        "id": "f5fb37db.834e88",
+        "type": "inject",
+        "z": "aa7c2446.895f68",
+        "name": "",
+        "topic": "",
+        "payload": "BTCUSDT",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 280,
+        "y": 700,
+        "wires": [
+            [
+                "32adee02.04c7d2",
+                "ca930a0e.418318"
+            ]
+        ]
+    },
+    {
+        "id": "ca930a0e.418318",
+        "type": "binance-get-price",
+        "z": "aa7c2446.895f68",
+        "name": "BTCUSDT",
+        "ticker": "BTCUSDT",
+        "x": 550,
+        "y": 740,
+        "wires": [
+            [
+                "9e125fa5.f16"
+            ]
+        ]
+    },
+    {
+        "id": "32adee02.04c7d2",
+        "type": "binance-get-all-prices",
+        "z": "aa7c2446.895f68",
+        "name": "",
+        "x": 550,
+        "y": 680,
+        "wires": [
+            [
+                "9e125fa5.f16"
+            ]
+        ]
+    }
+]
